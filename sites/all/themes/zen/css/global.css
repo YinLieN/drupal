@@ -1,0 +1,208 @@
+/*****************************/
+/*         GENERAL           */
+/*****************************/
+a{
+	color: #7a7a7a;
+}
+li{list-style: none;}
+
+/*****************************/
+/*        DIAPORAMA          */
+/*****************************/
+#content_diapo{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index:1;
+	overflow: hidden;
+	width: 100%;
+	height:550px;
+}
+
+/** navigation **/
+#views_slideshow_controls_text_previous_diaporama-block a,#views_slideshow_controls_text_next_diaporama-block a{
+	display: block;
+	width: 70px;
+	height:117px;
+	background: url(../images/navigation/diapo_prev.png) center center no-repeat ;
+	position: absolute;
+	top: 40%;
+	left: 5%;
+	z-index: 99;
+	text-indent: -9999px;
+	border-radius: 9px;
+	-webkit-transition: all .4s;
+	-moz-transition: all .4s;
+	-ms-transition: all .4s;
+	-o-transition: all .4s;
+	transition: all .4s;
+}
+#views_slideshow_controls_text_next_diaporama-block a{
+	background-image: url(../images/navigation/diapo_next.png);
+	left: auto;
+	right: 5%;
+}
+#views_slideshow_controls_text_previous_diaporama-block a:hover,#views_slideshow_controls_text_next_diaporama-block a:hover{
+	background-color: #222;
+	background-color: rgba(0,0,0,0.7)
+}
+#views_slideshow_controls_text_pause_diaporama-block{
+	display: none;
+}
+
+.wrapper_diapo{
+	width:430px;
+	height: 130px;
+	background-color: #fff;
+	background-color: rgba(255,255,255,0.7);
+	position: absolute;
+	bottom: 15%;
+	right: 50%;
+	margin-right: -350px;
+	border-top: 15px solid #666;
+	text-decoration: none;
+	text-align: left;
+}
+
+.wrapper_diapo .field_title{
+	display: block;
+	padding: 20px 25px 5px;
+	color: #000;
+	font-weight: bold;
+	font-size: 1.3em;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+.wrapper_diapo .field_description{
+	display: block;
+	padding: 0 25px;
+	color: #000;
+	font-size: 1.1em;
+}	
+.views-slideshow-cycle-main-frame-row{
+	height:505px !important;
+}
+/*****************************/
+/*         WEBFORM           */
+/*****************************/
+.webform-client-form {
+	padding:0;
+	overflow:hidden;
+}
+.webform-client-form label {
+	float:left;
+	width:150px;
+}
+.webform-client-form .field-prefix {
+	display:none;
+}
+.webform-client-form .form-text {
+	width:300px;
+	border: 1px solid #222;
+}
+.webform-client-form .form-textarea {
+	width:450px;
+	border: 1px solid #222;
+}
+.webform-client-form .webform-component {
+	clear:both;
+	margin: 5px 0;
+}
+
+/* captcha */
+.webform-client-form fieldset.captcha {
+	border:none;
+	margin:25px 0 0 0;
+	padding:0;
+}
+.webform-client-form fieldset.captcha legend {
+	display:none;
+}
+.webform-client-form fieldset.captcha .description {
+	margin:0;
+}
+/* captcha image */
+.webform-client-form fieldset.captcha img {
+	float:left;
+	margin-right:15px;
+}
+.webform-client-form fieldset.captcha label {
+	width:250px;
+}
+/* captcha math */
+.webform-client-form #edit-captcha-response-wrapper {
+	margin-top:4px;
+}
+.webform-client-form #edit-captcha-response-wrapper label {
+	width:auto;
+	margin-right:4px;
+}
+.webform-client-form #edit-captcha-response-wrapper .field-prefix {
+	display:block;
+	width:auto;
+	margin-right:4px;
+	float:left;
+}
+.webform-client-form  #edit-captcha-response-wrapper .form-text {
+	width:225px;
+}
+
+.webform-client-form .form-submit {
+	float:right;
+	margin-top:10px;
+	margin-right:66px;
+}
+
+
+/*****************************/
+/*       MENU FOOTER        */
+/*****************************/
+.bloc_menu_footer{overflow: hidden;}
+.bloc_menu_footer h2{
+	font-size: 1.2em;
+}
+.bloc_menu_footer h2 a{
+	color: #666;
+	text-decoration: none;
+}
+.bloc_menu_footer .block_menu{
+	width: 160px;
+	float: left;
+}
+.bloc_menu_footer ul li a{
+	text-decoration: none;
+	font-size: 1em;
+}
+.bloc_menu_footer h2 a:hover, .bloc_menu_footer ul li a:hover{text-decoration: underline;}
+
+
+/*****************************/
+/*       MENU CLOSURE        */
+/*****************************/
+#block-menu-menu-menu-closure{
+	clear:both;
+	margin: 20px 0;
+}
+#block-menu-menu-menu-closure ul.menu{
+	text-align: center;
+	list-style: none;
+}
+#block-menu-menu-menu-closure ul.menu li{
+	display: inline;
+	color: #7a7a7a;
+
+}
+#block-menu-menu-menu-closure ul.menu li a{
+	text-decoration: none;
+}
+#block-menu-menu-menu-closure ul.menu li a:hover{
+	text-decoration: underline;
+}
+
+#block-menu-menu-menu-closure ul.menu li:after{
+	content: "-";
+	padding: 0 0 0 3px;
+}
+#block-menu-menu-menu-closure ul.menu li.last:after{
+	content: none;
+}

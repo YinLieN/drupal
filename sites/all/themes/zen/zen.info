@@ -1,0 +1,48 @@
+name        = Zen
+description = Zen sub-themes are the ultimate starting themes for Drupal 7. Read the <a href="https://drupal.org/node/873778">online docs</a> or the included README-FIRST.txt on how to create a theme with Zen.
+screenshot  = zen-internals/screenshot.png
+
+core        = 7.x
+engine      = phptemplate
+
+stylesheets[all][] = system.menus.css
+
+; Css global à tous les sites
+stylesheets[all][] = css/global.css
+
+regions[header]         = header
+regions[left]           = left sidebar
+regions[right]          = right sidebar
+regions[navbar]         = navigation bar
+regions[toolbar]        = toolbar
+regions[content_top]    = content top
+regions[content_bottom] = content bottom
+regions[content] 		= content
+regions[content_home]   = content home
+regions[content_diapo]  = content diapo
+regions[footer]         = footer
+regions[footer_links]   = footer_links
+regions[closure_region] = closure
+
+settings[zen_breadcrumb]           = yes
+settings[zen_breadcrumb_separator] = ' › '
+settings[zen_breadcrumb_home]      = 1
+settings[zen_breadcrumb_trailing]  = 0
+settings[zen_breadcrumb_title]     = 0
+settings[zen_layout]               = zen-responsive-sidebars
+settings[zen_skip_link_anchor]     = main-menu
+settings[zen_skip_link_text]       = Jump to navigation
+settings[zen_html5_respond_meta][] = respond
+settings[zen_html5_respond_meta][] = html5
+settings[zen_html5_respond_meta][] = meta
+settings[zen_rebuild_registry]     = 0
+settings[zen_wireframes]           = 0
+
+plugins[panels][layouts] = panels-layouts
+
+; Information added by drupal.org packaging script on 2013-08-21
+version = "7.x-5.4"
+core = "7.x"
+project = "zen"
+datestamp = "1377107504"
+

@@ -1,0 +1,363 @@
+/*****************************/
+/*****************************/
+/*          RESET            */
+/*****************************/
+* {
+	margin:0;
+	padding:0;
+	border:0 none;
+	outline:0 none;
+	background:transparent;
+}
+
+@font-face {
+    font-family: 'Segoe Script';
+    src: url('ufonts.com_segoe_script-webfont.eot');
+    src: url('ufonts.com_segoe_script-webfont.eot?#iefix') format('embedded-opentype'),
+         url('ufonts.com_segoe_script-webfont.woff') format('woff'),
+         url('ufonts.com_segoe_script-webfont.ttf') format('truetype'),
+         url('ufonts.com_segoe_script-webfont.svg#segoe_scriptregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*****************************/
+/*     STRUCTURE DU SITE     */
+/*****************************/
+
+/** Body **/
+body {
+	margin:0;
+	padding:0;
+	color:#393939;
+	font-size:.75em;
+	text-align:center;
+	overflow-x: hidden;
+}
+body, caption, th, td, input, textarea, select, option, legend, fieldset {
+	font-family:"Open Sans", Arial, Verdana, sans-serif;
+}
+
+#page, #header, #navbar, #main, #main-inner, #footer, #closure {
+	width:100%;
+	text-align:center;
+}
+#header-inner, #navbar-inner, #main-inner, #footer_links-inner, #footer-inner, #closure-inner {
+	position:relative;
+	text-align:left;
+	margin:0 auto;
+	width:945px; /* Taille du site */
+	height:100%;
+	background:#fff;
+}
+
+#navbar{
+
+}
+#navbar-inner{
+	z-index:300;
+	text-align:left;
+}
+
+/** Prevent overflowing content **/
+#header, #content, #content-actualite, #navbar, #sidebar-left, #sidebar-right, #footer, #closure {
+	overflow:visible;
+	word-wrap:break-word;
+}
+#page {
+	font-size:1.05em;
+	line-height:1.333em;
+	background: url(http://www.transparenttextures.com/patterns/cardboard.png) 0 0 repeat #fff;
+}
+#page-inner {
+	width:100%;
+	height:100%;
+	background: url(../images/bg_int.jpg) center 0 no-repeat;
+}
+
+
+/* Main */
+#main {
+	position:relative;
+	z-index: 5;
+}
+
+#main-inner {
+	margin-top: 201px;
+	padding:0;
+	background: #fff;
+	overflow: hidden;
+	width: 985px;
+}
+
+/** Header **/
+#header {
+	position: relative;
+	z-index: 5;
+	height:75px;
+	background:#fff;
+	background:rgba(255,255,255,0.8);
+}
+#header-inner {
+	background:none;
+}
+#logo {
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:2;
+}
+
+#footer_links{
+	clear:both;
+	overflow: hidden;
+	background-color: #6e0129;
+}
+#footer_links-inner{background-color: transparent}
+
+/* ---------------------*/
+/** DIAPO **/
+/* ---------------------*/
+#content_diapo{
+	height:505px;
+}
+
+.wrapper_diapo{
+	border-color: #890032;
+	margin-right: -430px;
+}
+
+/** Contenu **/
+/* Mise en page sans colonne */
+.no-sidebars #content {
+	width:945px;
+}
+
+/* Mise en page avec seulenemnt une colonne gauche */
+.sidebar-first #content {
+	float:right;
+	width:672px;
+	margin-right:36px;
+}
+#sidebar-left {
+	float:left;
+	width:216px;
+	margin-left:0;
+}
+
+/* Mise en page avec seulement une colonne droite */
+.sidebar-second #content {
+	float:left;
+	width:670px;
+	padding: 0 0 20px 20px;
+}
+#sidebar-right {
+	float:right;
+	width:275px;
+	margin-right:0;
+}
+
+
+/** Style des titres **/
+h1, h1.title{
+	font-size: 3.3em;
+	line-height:1em;
+	margin: 0 0 0.5em;
+	color: #8d0a34;
+	font-weight: 600;
+}
+h2, h2.title{
+	font-size: 2.3em;
+	margin: 0.5em 0;
+	color: #383838;
+	font-weight: bold;
+}
+h3{
+	font-size: 1.8em;
+	margin: 0.5em 0;
+	color: #8d0a34;
+	font-weight: normal;
+}
+h4{
+	font-size: 1.6em;
+	margin: 0.5em 0;
+	color: #8d0a34;
+	font-weight: normal;
+}
+h5{
+	font-size: 1.2em;
+	margin: 0.5em 0;
+	color: #8d0a34;
+	font-weight: bold;
+}
+
+
+/** ===============================================
+ 	 BREADCRUMB 
+=============================================== **/
+.breadcrumb{
+	display: block;
+	margin: 15px 0 20px;
+}
+.breadcrumb li{
+	display: inline;
+	color: #8d0a34;
+	font-weight: 600;
+	font-size: 1.1em;
+}
+.breadcrumb li a{
+	color: #8d0a34;
+	text-decoration: none;
+	-webkit-transition: all .2s;
+	-moz-transition: all .2s;
+	-ms-transition: all .2s;
+	-o-transition: all .2s;
+	transition: all .2s;
+}
+.breadcrumb li a:hover{
+	color: #6e0129;
+	text-decoration: underline;
+}
+
+
+/** ===============================================
+ 	 CONTENU HTML 
+=============================================== **/
+address{
+	display: block;
+	padding: 15px 25px;
+	font-size: 1.1em;
+	line-height: 1.5em;
+	font-weight: 400;
+	background-color: #f0f0f0;
+	color: #000;
+	font-style: normal;
+	border-left: 8px solid #8d0a34;
+}
+
+.not-front #content-area p, .not-front #content-area li{font-size: 1.1em; line-height: 1.3em;}
+
+
+/** Editeur wysiwyg **/
+.img_float_left{float: left;margin-right: 10px;}
+.img_float_right{float: right;margin-left: 10px;}
+.txt_tres_gros{font-size: 1.5em;}
+.txt_gros{font-size: 1.3em;}
+.texte_rouge{color: #d60000;}
+.texte_bleu{color: #1008b2;}
+
+
+h2.block-title{
+	font-size: 1.4em;
+	font-weight: bold;
+	color: #000;
+	text-transform: uppercase;
+}
+
+
+/* ---------------------*/
+/**      FOOTER        **/
+/* ---------------------*/
+.bloc_menu_footer{
+	float: left;
+	overflow: hidden;
+	margin-top: 35px;
+}
+.bloc_menu_footer .block_menu{width: 225px;}
+.bloc_menu_footer h2, .bloc_contact h2{
+	margin: 0 0 10px;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.bloc_menu_footer ul li a{
+	display: block;
+	color: #fff;
+	font-size: 1.3em;
+	line-height: 1.2em;
+	margin-bottom: 8px;
+}
+.bloc_menu_footer h2 a{color: #fff;}
+
+/* CONTACT */
+.bloc_contact{
+	float: right;
+	width: 250px;
+	margin-top: 35px;
+}
+.bloc_contact p{
+	color: #fff;
+	font-size: 1.3em;
+	line-height: 1.2em;
+}
+.bloc_contact p.tel{
+	padding: 4px 0 4px 27px;
+	background: url(../images/ico/tel.png) left center no-repeat;
+	margin: 10px 0 15px;
+}
+.bloc_contact a{
+	display: block;
+	text-decoration: none;
+	color: #6e0129;
+	width: 150px;
+	height:39px;
+	line-height: 39px;
+	text-align: center;
+	font-size: 1.3em;
+	font-weight: bold;
+	background: #eee;
+	-webkit-transition: background .4s ease, box-shadow .4s ease-in-out;
+	-moz-transition: background .4s ease, box-shadow .4s ease-in-out;
+	-ms-transition: background .4s ease, box-shadow .4s ease-in-out;
+	-o-transition: background .4s ease, box-shadow .4s ease-in-out;
+	transition: background .4s ease, box-shadow .4s ease-in-out;
+}
+.bloc_contact a:hover{
+	background: #ccc;
+	box-shadow: 0 0 2px 4px #4a031d;
+}
+
+/** ===============================================
+ 	 MENU CLOSURE 
+=============================================== **/
+#block-menu-menu-menu-closure{margin: 0; padding: 50px 0 10px;}
+#block-menu-menu-menu-closure ul.menu li{
+	font-family: "Trebuchet MS", Arial, sans-serif;
+	font-size: 11px;
+	text-transform: uppercase;
+	color: #fff;
+}
+#block-menu-menu-menu-closure ul.menu li a{color: #fff;} 
+
+
+/* ------------------------------------------------------*/
+/** BLOCK 3 : GALERIE PHOTOS et BLOCK 4 : CHARTE ANC*****/
+/* ----------------------------------------------------*/
+.bloc_simple{
+	float: left;
+	margin-top: 20px;
+
+}
+.not-front .bloc_simple{
+	width: 275px;
+	overflow: hidden;
+}
+
+.bloc_simple h2 a{
+	display: block;
+	color: #000;
+	text-decoration: none;
+	background: url(../images/photos.png) no-repeat bottom left;
+	padding-bottom: 228px;
+	width: 287px;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-o-transition: all .3s;
+	-ms-transition: all .3s;
+	transition: all .3s;
+}
+.not-front.bloc_simple h2 a{width: 275px;}
+
+.bloc_simple h2 a:hover{
+	color: #890032;
+}

@@ -1,0 +1,159 @@
+/*****************************/
+/*****************************/
+/*          RESET            */
+/*****************************/
+* {
+	margin:0;
+	padding:0;
+	border:0 none;
+	outline:0 none;
+	background:transparent;
+}
+
+
+/*****************************/
+/*     STRUCTURE DU SITE     */
+/*****************************/
+
+/** Body **/
+body {
+	margin:0;
+	padding:0;
+	color:#393939;
+	font-size:.75em;
+	text-align:center;
+}
+body, caption, th, td, input, textarea, select, option, legend, fieldset {
+	font-family:Arial, Verdana, sans-serif;
+}
+
+#page, #header, #navbar, #main, #main-inner, #footer, #closure {
+	width:100%;
+	text-align:center;
+}
+#header-inner, #navbar-inner, #main-inner, #footer_links-inner, #footer-inner, #closure-inner {
+	position:relative;
+	text-align:left;
+	margin:0 auto;
+	width:960px; /* Taille du site */
+	height:100%;
+	background:#fff;
+}
+
+#navbar{
+
+}
+#navbar-inner{
+	z-index:300;
+	text-align:left;
+}
+
+/** Prevent overflowing content **/
+#header, #content, #content-actualite, #navbar, #sidebar-left, #sidebar-right, #footer, #closure {
+	overflow:visible;
+	word-wrap:break-word;
+}
+#page {
+	font-size:1.05em;
+	line-height:1.333em;
+	padding-bottom:20px;
+}
+#page-inner {
+	width:100%;
+	height:100%;
+}
+
+
+/* Main */
+#main {
+	position:relative;
+}
+#main-inner {
+	margin-top: 30px;
+	padding: 10px 0;
+}
+
+
+/** Header **/
+#header {
+
+}
+#header-inner {
+	min-height:100px;
+}
+#logo {
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:2;
+}
+
+
+/** Contenu **/
+/* Mise en page sans colonne */
+.no-sidebars #content {
+	width:960px;
+}
+
+/* Mise en page avec seulenemnt une colonne gauche */
+.sidebar-left #content {
+	float:right;
+	width:672px;
+	margin-right:36px;
+}
+#sidebar-left {
+	float:left;
+	width:216px;
+	margin-left:0;
+}
+
+/* Mise en page avec seulement une colonne droite */
+.sidebar-right #content {
+	float:left;
+	width:672px;
+	margin-left:36px;
+}
+#sidebar-right {
+	float:right;
+	width:216px;
+	margin-right:0;
+}
+
+
+/** Style des titres **/
+h1, h1.title{
+	font-size: 2.5em;
+	line-height:1em;
+	margin: 0.5em 0;
+	color: #000;
+	font-weight: normal;
+}
+h2, h2.title{
+	font-size: 2em;
+	margin: 0.5em 0;
+	color: #000;
+}
+h3{
+	font-size: 1.6em;
+	margin: 0.5em 0;
+	color: #000;
+}
+h4{
+	font-size: 1.3em;
+	margin: 0.5em 0;
+	color: #000;
+}
+h5{
+	font-size: 1em;
+	margin: 0.5em 0;
+	color: #000;
+	font-weight: bold;
+}
+
+/** Editeur wysiwyg **/
+.img_float_left{float: left;margin-right: 10px;}
+.img_float_right{float: right;margin-left: 10px;}
+.txt_tres_gros{font-size: 1.5em;}
+.txt_gros{font-size: 1.3em;}
+.texte_rouge{color: #d60000;}
+.texte_bleu{color: #1008b2;}

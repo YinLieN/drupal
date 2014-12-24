@@ -1,0 +1,182 @@
+#main-inner{
+	background: none; 
+	margin-top: 401px;
+	padding: 10px 0 0;
+	width: 945px;
+	overflow: visible;
+}
+
+/* ------------------------------*/
+/** BLOCK 1 : QUI SOMMES NOUS; **/
+/* -----------------------------*/
+
+.bloc_presentation{
+	width: 586px;
+	float: left;
+}
+.bloc_presentation h2{
+	color: #000;
+	font-family: "Segoe Script", "Open Sans", Arial;
+	font-size: 1.8em;
+	font-weight: bold;
+	text-align: center;
+	padding: 0 60px;
+	line-height: 1.2em;
+	text-transform: uppercase;
+	position: relative;
+	margin: 20px 0;
+}
+.bloc_presentation h2:before, .bloc_presentation h2:after{
+	content: "";
+	width:39px;height: 37px;
+	background: url(../images/guillemets.png) no-repeat -1px 1px;
+	position: absolute;
+	top: -10px;left: -2px;
+
+}
+.bloc_presentation h2:after{
+	background-position: -1px -36px;
+	top: auto;left: auto;
+	bottom: -12px;right: 0;
+}
+.bloc_presentation p{
+	color: #000;
+	font-size: 1.2em;
+	line-height: 1.2em;
+	text-align: justify;
+}
+.bloc_presentation p a{color: #383838;}
+.bloc_presentation p a:hover{text-decoration: underline;}
+
+/* ----------------------------*/
+/** BLOCK 4 : CHARTE ANC********/
+/* ----------------------------*/
+.bloc_simple.anc{margin-left: 37px;}
+.bloc_simple.anc h2 a{
+	background-image: url(../images/charte_anc.png);
+	width: 261px;
+}
+
+
+/* ----------------------------*/
+/** VUE VIGNETTES HOME        **/
+/* ----------------------------*/
+#block-views-vignette-block{
+	clear: both;
+	overflow: hidden;
+}
+#block-views-vignette-block .views-row{
+	float: left;
+	width: 215px;
+	overflow: hidden;
+	position: relative;
+	margin: 0 28px 50px 0;
+}
+#block-views-vignette-block .views-row.views-row-4{margin-right: 0;}
+#block-views-vignette-block .views-row .views-field-title{
+	display: table-cell;
+	vertical-align: middle;
+	color: #fff;
+	background-color: #890032;
+	text-transform: uppercase;
+	font-size: 1.3em;
+	font-weight: bold;
+	text-align: center;
+	width: 215px;
+	height: 47px;
+	line-height: 1.1em;
+}
+#block-views-vignette-block .views-row .views-field-field-image-vignette{
+	opacity: 0.8;
+}
+
+#block-views-vignette-block .views-row .views-field-body{
+	position: absolute;
+	top: 230px;left: 0;
+	width: 90%;
+	height:160px;
+	padding: 10px 5% 2px;
+	color: #000;
+	font-size: 11px;
+	line-height: 14px;
+	font-weight: bold;
+	text-align: justify;
+	background-color: #000;
+	background-color: rgba(255,255,255,0.9);
+	-webkkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-o-transition: all .5s;
+	-ms-transition: all .5s;
+	transition: all .5s;
+}
+#block-views-vignette-block .views-row:hover .views-field-body{
+	top: 47px;
+	background-color: rgba(255,255,255,0.75);
+}	
+#block-views-vignette-block .views-row .views-field-body .plus{
+	display: block;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding: 5px 30px;
+	margin: 0 5% 6px 0;
+	background: url(../images/ico/plus.png) no-repeat right center;
+}	
+#block-views-vignette-block .views-row .views-field-field-lien-vignette a{
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	text-indent: -9999px;
+}
+
+
+/* -------------------------------*/
+/** VUE : DERNIER CHANTIER; ******/
+/* ------------------------------*/
+
+
+#block-views-chantier-block{
+	width: 315px;
+	height:545px;
+	float: right;
+	overflow: hidden;
+	margin-top: 23px;
+}
+#block-views-chantier-block h2{
+	margin: 0 0 10px;
+}
+#block-views-chantier-block .views-field-title{
+	font-size: 1.4em;
+	font-weight: bold;
+	margin: 5px 0 10px;
+	line-height: 1.15em;
+}
+#block-views-chantier-block .views-field-title a{
+	color: #890032;
+	text-decoration: none;
+}
+#block-views-chantier-block .views-field-body{
+	color: #000;
+	font-size: 1em;
+	text-align: justify;
+}
+#block-views-chantier-block > a{
+	color: #890032;
+	float: right;
+	margin-top: 15px;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 7px 9px;
+	border-radius: 2px;
+	-webkit-transition: all .4s;
+	-moz-transition: all .4s;
+	-o-transition: all .4s;
+	transition: all .4s;
+}
+#block-views-chantier-block > a:hover{
+	background-color: #890032;
+	color: #fff; 
+}

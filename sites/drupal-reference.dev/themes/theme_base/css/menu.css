@@ -1,0 +1,91 @@
+.block-superfish {
+	margin:0;
+	height:25px;
+	background: #ececec !important;
+	border-top: 1px solid #d6d6d6;
+	border-bottom: 1px solid #d6d6d6;
+}
+
+.block-superfish .sf-menu.sf-style-default {
+	margin:0;
+}
+/* Ne pas mettre de hauteur au li, jouer avec les paddings */
+.sf-menu.sf-style-default li {
+	background:none;
+	line-height:16px;
+	padding:0;
+	-webkit-transition: all .4s;
+	-moz-transition: all .4s;
+	-ms-transition: all .4s;
+	-o-transition: all .4s;
+	transition: all .4s;
+}
+/* Style par défaut des liens */
+.sf-menu.sf-style-default a, 
+.sf-menu.sf-style-default a:visited  {
+	padding:5px 10px;
+	border:none;
+	font-size:1em;
+	text-decoration:none;
+	color:#535353;
+	font-smooth:always;
+	-webkit-font-smoothing:antialiased; /* Simule l'anti-aliasing */
+}
+.sf-menu.sf-style-default li:hover,
+.sf-menu.sf-style-default li.sfHover,
+.sf-menu.sf-style-default a:focus,
+.sf-menu.sf-style-default a:hover,
+.sf-menu.sf-style-default a:active {
+  background:none;
+}
+
+
+/* Menu niveau 1 */
+.sf-menu.sf-style-default li.sf-depth-1 {
+}
+/* Survol du niveau 1 */
+.sf-menu.sf-style-default li.sf-depth-1.sfHover a,
+.sf-menu.sf-style-default a.sf-depth-1:focus,
+.sf-menu.sf-style-default a.sf-depth-1:hover,
+.sf-menu.sf-style-default a.sf-depth-1:active {
+	background:#868686;
+	color:#fff;
+}
+
+
+
+/* Menu niveau 2 */
+.sf-menu li:hover ul,
+.sf-menu li.sfHover ul {
+	top:25px;
+}
+.sf-menu.sf-style-default ul {
+	width:150px !important; /* largeur des sous-menu */
+}
+.sf-menu.sf-style-default li.sf-depth-2,
+.sf-menu.sf-style-default li.sf-depth-2 li {
+	text-transform:none;
+	text-align:left;
+	letter-spacing:0;
+	background:none;
+	border:none;
+}
+.sf-menu.sf-style-default li.sf-depth-1 li > a,
+.sf-menu.sf-style-default li.sf-depth-1.sfHover li a {
+	background:#ddd;
+	border-bottom:1px solid #dedede;
+	color:#868686;
+	padding:10px;
+}
+/* Survol des liens des sous-menus */
+.sf-menu.sf-style-default li.sf-depth-1 li:hover > a,
+.sf-menu.sf-style-default li.sf-depth-1.sfHover li a:hover {
+	color:#f00;
+	background:#ff0;
+}
+
+/* Menu niveau 3 */
+.sf-menu.sf-style-default ul ul {
+	left:150px !important; /* identique à la largeur des sous-menu */
+	top:0;
+}
