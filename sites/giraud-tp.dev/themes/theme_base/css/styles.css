@@ -92,12 +92,16 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset {
 
 /** Header **/
 #header {
-	position: relative;
+	position: absolute;
+	top: 0; left: 0;
+	width: 100%;
 	z-index: 5;
 	height:75px;
 	background:#fff;
 	background:rgba(255,255,255,0.8);
 }
+.admin-menu #header{top: 29px;}
+
 #header-inner {
 	background:none;
 }
@@ -114,18 +118,6 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset {
 	background-color: #6e0129;
 }
 #footer_links-inner{background-color: transparent}
-
-/* ---------------------*/
-/** DIAPO **/
-/* ---------------------*/
-#content_diapo{
-	height:505px;
-}
-
-.wrapper_diapo{
-	border-color: #890032;
-	margin-right: -430px;
-}
 
 /** Contenu **/
 /* Mise en page sans colonne */
@@ -320,11 +312,20 @@ h2.block-title{
 /** ===============================================
  	 MENU CLOSURE 
 =============================================== **/
-#block-menu-menu-menu-closure{margin: 0; padding: 50px 0 10px;}
+#block-menu-menu-menu-closure{
+	margin: 0; 
+	padding: 50px 0 15px;
+	overflow: hidden;
+}
+#block-menu-menu-menu-closure .content{float: right;}
+#block-menu-menu-menu-closure .copyright{
+	float: left;
+	font-size: 11px;
+	color: #fff;
+}
 #block-menu-menu-menu-closure ul.menu li{
 	font-family: "Trebuchet MS", Arial, sans-serif;
 	font-size: 11px;
-	text-transform: uppercase;
 	color: #fff;
 }
 #block-menu-menu-menu-closure ul.menu li a{color: #fff;} 
@@ -361,3 +362,5 @@ h2.block-title{
 .bloc_simple h2 a:hover{
 	color: #890032;
 }
+
+

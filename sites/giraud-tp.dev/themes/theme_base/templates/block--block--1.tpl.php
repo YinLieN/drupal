@@ -21,8 +21,7 @@
 			La société <b>GIRAUD TRAVAUX PUBLICS</b>, située à Saint Maurice le Girard (85390), est à votre service depuis 1988 dans le domaine du TP. 
 			Pour développer son activité une seconde entreprise a vu le jour en Janvier 2010 : la société <b>GIRAUD VIDANGE</b>. Elle permet la pérennisation des
 			installations d'assainissements individuels. Elle vous propose donc une activité de vidange de fosse septique, de bac à graisse et d'entretien
-			de canalisations. Nous intervenons auprès des particuliers et des professionnels pour nos différentes activités. Nous réalisons des <a href="/node/4">devis 
-			personnalisés gratuits</a> à votre demande.
+			de canalisations. Nous intervenons auprès des particuliers et des professionnels pour nos différentes activités.
 		</p>
     </div>
 

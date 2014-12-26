@@ -1,10 +1,107 @@
+/*Global*/
+#page-inner{
+	background: none;
+}
+
 #main-inner{
 	background: none; 
-	margin-top: 401px;
 	padding: 10px 0 0;
 	width: 945px;
 	overflow: visible;
+	margin-top: 0;
 }
+
+/* ---------------------*/
+/** DIAPO **/
+/* ---------------------*/
+#content_diapo{
+	position: relative;
+	top: auto; left: auto;
+	height: auto;
+}
+
+.nivoSlider{
+	width: 100% !important;
+	height: auto !important;
+}
+
+.nivoSlider img{
+	width: 100% !important;
+	height: auto;
+}
+
+.nivo-caption{
+	font-family: 'Oswald', Arial, sans-serif;
+	font-size: 23px;
+	font-weight: bold;
+	left: 50%;
+	bottom: 15%;
+	width: auto;
+	margin-left: -480px;
+	padding: 25px 30px;
+	opacity: 1;
+	border-top: 7px solid #890032;
+	background: rgba(0,0,0,0.6);
+}
+
+.nivo-controlNav{
+	position: absolute;
+	bottom: 0; left: 0;
+	width: 100%;
+	text-align: center;
+	z-index: 100;
+}
+.nivo-controlNav a{
+	display: inline-block;
+	width: 10px; height: 10px;
+	background-color: #fff;
+	margin: 0 5px;
+	border-radius: 50%;
+	text-indent: -9999px;
+	transition: all .2s ease;
+}
+.nivo-controlNav a:hover{
+	background-color: #890032;
+}
+.nivo-controlNav a.active{
+	background-color: #890032;
+	box-shadow: 0 0 0 2px #fff;
+}
+
+
+.nivo-directionNav .nivo-prevNav, .nivo-directionNav .nivo-nextNav{
+	display: block;
+	width: 50px;
+	height:75px;
+	background: url(../images/navigation/slide_prev.png) center center no-repeat ;
+	position: absolute;
+	top: 50%;
+	left: 2%;
+	z-index: 99;
+	text-indent: -9999px;
+	border-radius: 4px;
+	-webkit-transition: all .4s;
+	-moz-transition: all .4s;
+	-ms-transition: all .4s;
+	-o-transition: all .4s;
+	transition: all .4s;
+}
+.nivo-directionNav *{
+	opacity: 0;
+	visibility: hidden;
+	transition: all .3s ease;
+}
+.nivo-directionNav .nivo-nextNav{
+	background-image: url(../images/navigation/slide_next.png);
+	left: auto;
+	right: 2%;
+}
+.nivo-directionNav .nivo-prevNav:hover, .nivo-directionNav .nivo-nextNav:hover{
+	background-color: #000;
+	background-color: rgba(0,0,0,0.6);
+}
+
+#content_diapo:hover .nivo-directionNav *{opacity: 1; visibility: visible;}
 
 /* ------------------------------*/
 /** BLOCK 1 : QUI SOMMES NOUS; **/
@@ -179,4 +276,59 @@
 #block-views-chantier-block > a:hover{
 	background-color: #890032;
 	color: #fff; 
+}
+
+
+/* ------------------------------------------------------*/
+/** CONTENT TOP : Contact btn; **/
+/* ----------------------------------------------------*/
+#content-top{
+	width: 100%;
+	background-color: #151515;
+	padding: 20px 0;
+	overflow: hidden;
+}
+
+.bloc_contact_top{
+	width: 945px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+.bloc_contact_top .content{
+	float: left;
+	line-height: normal;
+}
+.bloc_contact_top .content .title{
+	font-size: 20px;
+	color: #fff;
+	margin-bottom: 5px;
+
+}
+.bloc_contact_top .content .subtitle{
+	font-size: 16px;
+	color: #666;
+	color: rgba(255,255,255,0.6);
+}
+
+.bloc_contact_top .btn{
+	float: right;
+}
+
+.bloc_contact_top .btn a{
+	display: block;
+	font-size: 18px;
+	color: #fff;
+	text-decoration: none;
+	padding: 20px;
+	border-radius: 5px;
+	background: #8d0a34;
+	background: -webkit-linear-gradient(to bottom, #8d0a34 0, #690727 100%);
+	background: -moz-linear-gradient(to bottom, #8d0a34 0, #690727 100%);
+	background: linear-gradient(to bottom, #8d0a34 0, #690727 100%);
+	transition: all .2s ease;
+}
+
+.bloc_contact_top .btn a:hover{
+	box-shadow: 0 0 0 2px #fff;
 }

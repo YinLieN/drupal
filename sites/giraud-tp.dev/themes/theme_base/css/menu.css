@@ -1,6 +1,5 @@
 .block-superfish {
 	margin:0;
-	width:740px;
 	height:70px;
 	float: right;
 	background: none;
@@ -39,11 +38,12 @@
 /* Menu niveau 1 */
 .sf-menu.sf-style-default li.sf-depth-1 > a{
 	color:#8d0a34;
-	font-size: 1.5em;
+	font-size: 1.4em;
 	font-weight: bold;
 	line-height: 60px;
 	text-transform: uppercase;
 	padding: 0 20px;
+	transition: all .2s ease;
 
 }
 /* Survol du niveau 1 */

@@ -71,6 +71,12 @@ $content_diapo = render($page['content_diapo']);
 				</div>
 			</div> <!-- /#navbar-inner, /#navbar -->
 	    <?php endif; ?>
+
+      <?php if ($content_top): ?>
+        <div id="content-top" class="region region-content_top">
+          <?php print $content_top; ?>
+        </div> <!-- /#content-top -->
+      <?php endif; ?>
 		
 	  <div id="main">
           <div id="main-inner" class="clear-block">
@@ -84,12 +90,6 @@ $content_diapo = render($page['content_diapo']);
               <div id="content-inner">
                 <?php if ($mission): ?>
                   <div id="mission"><?php print $mission; ?></div>
-                <?php endif; ?>
-
-                <?php if ($content_top): ?>
-                  <div id="content-top" class="region region-content_top">
-                    <?php print $content_top; ?>
-                  </div> <!-- /#content-top -->
                 <?php endif; ?>
 
                 <?php if ($breadcrumb || $title || $tabs || $help || $messages): ?>

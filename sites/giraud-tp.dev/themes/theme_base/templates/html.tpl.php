@@ -28,7 +28,7 @@ global $base_url;
   <meta http-equiv="cleartype" content="on">
 
   <?php print $styles; ?>
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700|Oswald:400,700,300' rel='stylesheet' type='text/css'>
   <?php if($is_front): ?>
     <?php $path_to_theme_base = drupal_get_path('theme', 'theme_base'); ?>
     <link rel="stylesheet" type="text/css" href="<?php print $base_url.'/'.$path_to_theme_base; ?>/css/front.css">
