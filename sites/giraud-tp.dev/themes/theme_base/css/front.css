@@ -3,6 +3,8 @@
 	background: none;
 }
 
+#main{padding-top: 0;}
+
 #main-inner{
 	background: none; 
 	padding: 10px 0 0;

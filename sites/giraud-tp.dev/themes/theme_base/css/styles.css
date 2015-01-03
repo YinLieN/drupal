@@ -80,10 +80,10 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset {
 #main {
 	position:relative;
 	z-index: 5;
+	padding-top: 250px;
 }
 
 #main-inner {
-	margin-top: 201px;
 	padding:0;
 	background: #fff;
 	overflow: hidden;
@@ -95,7 +95,7 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset {
 	position: absolute;
 	top: 0; left: 0;
 	width: 100%;
-	z-index: 5;
+	z-index: 15;
 	height:75px;
 	background:#fff;
 	background:rgba(255,255,255,0.8);
@@ -123,6 +123,7 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset {
 /* Mise en page sans colonne */
 .no-sidebars #content {
 	width:945px;
+	margin: 0 auto;
 }
 
 /* Mise en page avec seulenemnt une colonne gauche */
@@ -364,3 +365,6 @@ h2.block-title{
 }
 
 
+/* ------------------------------------------------------*/
+/** BLOCK 3 : GALERIE PHOTOS et BLOCK 4 : CHARTE ANC*****/
+/* ----------------------------------------------------*/
